@@ -11,11 +11,13 @@ import SellingSection from '../components/sections/SellingSection/SellingSection
 import SubscribeSections from '../components/sections/SubscribeSection/SubscribeSections';
 
 export default function IndexPage() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
+  function onExplore() {
+    setIsOpen(true)
+  }
   function onRequestClose() {
     setIsOpen(false)
-    console.log('request close')
   }
 
   return (
@@ -50,7 +52,7 @@ export default function IndexPage() {
         </div>
       </Dialog>
 
-      <Header />
+      <Header onExplore={onExplore} />
 
       <PromoSection />
 

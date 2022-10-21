@@ -1,7 +1,16 @@
-import React from "react";
+import React, { FC } from "react";
 import HeaderSearch from "../forms/HeaderSearch/HeaderSearch";
 
-export default function Header() {
+interface HeaderProps {
+  onExplore?: () => void,
+}
+
+const Header: FC<HeaderProps> = ({ onExplore = () => { } }) => {
+
+  function onClickExplore() {
+    onExplore();
+  }
+
   return (
     <header className="header_main">
       <div className="container">
@@ -20,7 +29,7 @@ export default function Header() {
           </div>
 
 
-          <a href="#/" data-fancybox data-src="#js_modal_connect" className="btn__header__connect">
+          <a href="#/" data-fancybox data-src="#js_modal_connect" className="btn__header__connect" onClick={onClickExplore}>
             Connect
             <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M21.0713 12.992H16.8358C15.2936 12.992 14.043 11.7414 14.043 10.1981C14.043 8.65588 15.2936 7.40527 16.8358 7.40527H21.0381" stroke="white" stroke-width="1.63462" stroke-linecap="round" stroke-linejoin="round" />
@@ -44,3 +53,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header
