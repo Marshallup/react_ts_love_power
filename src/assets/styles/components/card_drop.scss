@@ -1,0 +1,88 @@
+
+.card__drop {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.1);
+    max-width: 409px;
+}
+
+.card__drop__image__inner {
+    padding-top: 100%;
+    position: relative;
+}
+
+.card__drop__image__inner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__drop__info {
+    padding: 17px 30px 30px;
+    position: relative;
+}
+
+
+.card__drop__who {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.card__drop__who__image {
+    width: 30px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.card__drop__who__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.5%;
+    margin-top: -3px;
+}
+
+.card__drop__add_info__title {
+    font-size: 18px;
+    line-height: 122.5%;
+    color: #736FA3;
+    margin-bottom: 5px;
+}
+
+.card__drop__add_info__value {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 115%;
+    color: #272727;
+}
+
+.btn__card__drop {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 130px;
+    background: #4737FF;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.5%;
+    padding: 16px;
+}
+
+.card__drop__add_info {
+    padding-right: 130px;
+}
+@media screen and (max-width: 900px) {
+.card__drop{border-radius:20px}
+}

@@ -1,0 +1,390 @@
+.date__custom {
+    position: relative;
+}
+
+.date__modal {
+    position: absolute;
+    width: 100%;
+    min-width: 550px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    padding: 25px 27px 21px;
+    top: calc(100% + 13px);
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+    z-index: -1;
+}
+
+.date__modal.active {
+    opacity: 1;
+    z-index: 12;
+}
+
+.custom__select--date .custom__select__view {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='22' viewBox='0 0 20 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.75 11.776C0.75 4.81995 3.069 2.50195 10.024 2.50195C16.98 2.50195 19.299 4.81995 19.299 11.776C19.299 18.732 16.98 21.05 10.024 21.05C3.069 21.05 0.75 18.732 0.75 11.776Z' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.02539 8.32422H19.0334' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.4286 12.2612H14.4376' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.0292 12.2612H10.0382' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.62148 12.2612H5.63048' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.4286 16.1133H14.4376' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.0292 16.1133H10.0382' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.62148 16.1133H5.63048' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.0332 1.05029V4.31229' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.0249 1.05029V4.31229' stroke='%23130F26' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 24px 42%;
+    padding: 13px 20px;
+    padding-left: 57px;
+}
+
+.date__modal__select {
+    margin-bottom: 29px;
+}
+
+.date__modal__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.5%;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+
+
+.date__modal__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.date__modal__col__divide {
+    width: 15px;
+    height: 1px;
+    background: #000;
+    margin: 0 10px -32px;
+    font-size: 0;
+}
+
+.date__modal__col {
+    flex: 1;
+}
+
+.date__modal__field input {
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 16px;
+    width: 100%;
+    padding: 9px 13px;
+}
+
+.date-picker-wrapper .gap .gap-lines {
+    display: none;
+}
+
+.date-picker-wrapper .gap {
+    opacity: 0;
+}
+
+.date-picker-wrapper.no-topbar {
+    padding: 0;
+    border: none;
+    width: 100%;
+    font-family: inherit;
+}
+
+.date-picker-wrapper .month-wrapper table.month2 {
+    width: calc(50% - 20px);
+}
+
+.date-picker-wrapper .month-wrapper {
+    width: 100% !important;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.date-picker-wrapper .month-wrapper table.month1 {
+    width: calc(50% - 20px);
+}
+
+.date__field__view__inner>input {
+    opacity: 0;
+    display: none;
+}
+
+.date-picker-wrapper .footer {
+    display: none;
+}
+
+.month-name {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+}
+
+.date-picker-wrapper .month-wrapper table td,
+.date-picker-wrapper .month-wrapper table th {
+    text-transform: capitalize;
+}
+
+.date-picker-wrapper .month-wrapper table .week-name th {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.date-picker-wrapper .month-wrapper table .day.real-today.checked {
+    background: #f0efff;
+}
+
+.date-picker-wrapper .month-wrapper table .day.checked {
+    background: #F0EFFF;
+    border-radius: 0px;
+}
+
+
+
+.date-picker-wrapper .month-wrapper table .day {
+    color: #9AACBC;
+}
+
+.date-picker-wrapper .month-wrapper table .day.toMonth.valid {
+    color: inherit;
+    padding: 10px;
+}
+
+.date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+    background: #F0EFFF;
+}
+
+.js_date {
+    padding-left: 54px;
+}
+
+.date-picker-wrapper .gap {
+    display: none;
+}
+
+.main__content {
+    position: relative;
+    overflow: visible;
+}
+
+.date-picker-wrapper .month-wrapper table .day.real-today {
+    background: #fff4ac;
+}
+
+.date-picker-wrapper table .caption .prev {
+    background-image: url("data:image/svg+xml,%3Csvg width='9' height='16' viewBox='0 0 9 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 1C8 1 1 5.144 1 8C1 10.855 8 15 8 15' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 10px;
+    font-size: 0;
+}
+
+.date__field__view__inner {
+    margin: 0 -5px;
+}
+
+.date-picker-wrapper table .caption .next {
+    background-image: url("data:image/svg+xml,%3Csvg width='9' height='16' viewBox='0 0 9 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.999999 1C0.999999 1 8 5.144 8 8C8 10.855 1 15 1 15' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    font-size: 0;
+    padding: 10px;
+}
+
+.date-picker-wrapper .time {
+    display: none;
+}
+
+.dp-clearfix {
+    display: none;
+}
+
+.date-picker-wrapper table .caption .next:hover,
+.date-picker-wrapper table .caption .prev:hover {
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.date-picker-wrapper .month-wrapper table .day {
+    margin-bottom: 3px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.date-picker-wrapper .month-wrapper table td:last-child .day.checked:not(.first-date-selected):not(.last-date-selected) {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.date-picker-wrapper .month-wrapper table td:first-child .day.checked {
+    border-radius: 10px 0 0 10px;
+}
+
+.date-picker-wrapper .month-wrapper table .day.nextMonth {
+    display: none;
+}
+
+
+.date-picker-wrapper .first-date-selected {
+    position: relative;
+}
+
+.date-picker-wrapper .month-wrapper table td:has(.checked)+td {
+    position: relative
+}
+
+.date-picker-wrapper .month-wrapper table td:has(.first-date-selected)+td:has(.toMonth):after {
+    position: absolute;
+    width: 10px;
+    height: calc(100% - 3px);
+    background: #f0efff;
+    content: '';
+    top: 0px;
+    left: -7px;
+    z-index: 0;
+}
+
+.date-picker-wrapper .month-wrapper table td {
+    position: relative;
+}
+
+.date-picker-wrapper .month-wrapper table td:has(+td>.last-date-selected):after {
+    position: absolute;
+    width: 15px;
+    height: calc(100% - 3px);
+    background: #f0efff;
+    content: '';
+    top: 0px;
+    right: -6px;
+    z-index: 0;
+}
+
+.date-picker-wrapper .month-wrapper table .day.real-today.checked {
+    background: #f0efff;
+}
+
+
+.date-picker-wrapper .month-wrapper table td:has(.lastMonth)+td:has(.checked) div:not(.first-date-selected):not(.last-date-selected) {
+    border-radius: 10px 0 0 10px !important;
+}
+
+.date-picker-wrapper .month-wrapper table td:has(+td>.nextMonth.checked) .toMonth.checked {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+
+.date-picker-wrapper .month-wrapper table td:first-child:has(+td>.nextMonth.checked) .toMonth.checked {
+    border-radius: 10px !important;
+}
+
+.date-picker-wrapper .month-wrapper table td:has(.lastMonth)+td:has(.last-date-selected)+td:after {
+    display: none;
+}
+
+td:has(.lastMonth):after {
+    display: none !important;
+}
+
+td:has(.nextMonth):after {
+    display: none !important;
+}
+
+td:has(.first-date-selected):has(div:not(.lastMonth))+td:has(.last-date-selected) div {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+
+td:has(.first-date-selected):has(+td>.last-date-selected) div {
+    border-radius: 10px 0 0 10px !important;
+}
+
+.date-picker-wrapper .first-date-selected {
+    border-radius: 10px !important;
+    background: #4737FF !important;
+}
+
+.date-picker-wrapper .last-date-selected {
+    background: #4737FF !important;
+    border-radius: 10px !important;
+}
+
+.date-picker-wrapper .month-wrapper table td:has(.lastMonth.first-date-selected)+td:has(.toMonth):after {
+    display: none;
+}
+
+.date-picker-wrapper .date-range-length-tip {
+    z-index: 5;
+    background-color: #4737ff;
+    color: #fff;
+    padding: 6px 11px;
+    font-size: 10px;
+    transform: translate(7px, -13px);
+    box-shadow: none;
+    border-radius: 7px;
+}
+
+.date-picker-wrapper .date-range-length-tip:after {
+    border-top: 4px solid #4737ff;
+}
+
+.date-picker-wrapper .month-wrapper table .day.real-today {
+    background: transparent;
+}
+
+.date-picker-wrapper .month-wrapper table td:has(+td>.nextMonth.last-date-selected):after {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .date-picker-wrapper .month-wrapper table .day.real-today {
+        background: #fff4ac;
+    }
+
+    .date__modal {
+        padding: 20px;
+        min-width: auto;
+    }
+
+    .date-picker-wrapper .month-wrapper table.month1 {
+        width: 100%;
+    }
+
+    .date-picker-wrapper .month-wrapper table.month2 {
+        width: 100%;
+    }
+
+    .date-picker-wrapper .gap {
+        display: block;
+        padding: 0;
+        height: 30px !important;
+    }
+
+    .field__item.field__item--small {
+        margin-bottom: 0;
+    }
+
+    .field__item.field__item--big {
+        margin-bottom: 0;
+    }
+
+    .custom__select--date .custom__select__view {
+        padding: 10px;
+        font-size: 14px;
+        padding: 12px 10px 10px;
+        border-radius: 15px;
+        padding-left: 50px;
+        background-position: 17px 50%;
+    }
+
+    .date__modal__title {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .date__modal__field input {
+        border-radius: 15px;
+        font-size: 13px;
+        padding: 10px 13px;
+    }
+}

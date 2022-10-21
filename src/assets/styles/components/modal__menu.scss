@@ -1,0 +1,126 @@
+body.body-lock {
+    position: fixed;
+    width: 100%;
+}
+
+.menu__mobile {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    background: #fff;
+    height: calc(100vh - 88px);
+    width: 100%;
+    background: rgba(71,55,255,.7);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    padding: 32px 0;display: none;
+
+
+    &.active {
+        opacity: 1;
+        z-index: 6;
+        pointer-events: all;
+        transform: translate(0%, 0);
+    }
+}
+
+.menu__mobile .container {
+    display: flex;
+    width: 100%;
+}
+
+.menu__mobile__col ul {
+    list-style: none;
+}
+
+.menu__mobile__col a {
+    color: inherit;
+}
+
+li.menu__mobile__title a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 115%;
+    color: #FFFFFF;
+}
+
+.menu__mobile__col a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 122.5%;
+}
+
+.menu__mobile__col li {
+    margin-bottom: 8px;
+}
+
+.menu__mobile__col li:last-child {
+    margin-bottom: 0;
+}
+
+.menu__mobile__col {
+    width: 200px;
+}
+
+li.menu__mobile__title {
+    margin-bottom: 20px;
+}
+
+.menu__mobile__col a:hover {
+    opacity: 0.5;
+}
+.menu__mobile__search{display: none;}
+
+
+
+
+@media screen and (max-width: 550px) {
+    .menu__mobile__search{display: flex;    margin-bottom: 25px;}
+    .menu__mobile__search>div {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .header__search__field {
+        background: #fff;
+    }
+
+
+    .menu__mobile .container {
+        flex-direction: column;
+    }
+
+    .menu__mobile__col {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .menu__mobile {
+        top: 64px;
+        height: calc(100vh - 64px);
+    }
+
+    .menu__mobile__col:last-child {
+        margin-bottom: 0;
+    }
+
+    li.menu__mobile__title a {
+        font-size: 18px;
+    }
+
+    .menu__mobile__col li {
+        margin-bottom: 3px;
+    }
+
+    li.menu__mobile__title {
+        margin-bottom: 10px;
+    }
+
+    .menu__mobile__col a {
+        font-size: 14px;
+    }
+}

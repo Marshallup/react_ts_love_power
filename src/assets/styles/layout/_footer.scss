@@ -1,0 +1,33 @@
+.main_footer {
+    position: relative;
+    background: #080068;
+    text-align: center;
+    padding: 88px 0 56px;
+    color: #FFFFFF;
+}
+
+.footer__logo {
+    display: inline-flex;
+    margin-bottom: 94px;
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 94.5%;
+}
+
+@media screen and (max-width:900px) {
+    .main_footer {
+        padding: 55px 0 35px;
+    }
+
+    .footer__logo {
+        width: 125px;
+        margin-bottom: 60px;
+    }
+
+    .footer__copyright {
+        font-size: 12px;
+    }
+}

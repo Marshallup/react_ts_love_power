@@ -1,0 +1,30 @@
+@import "vendor/_normalize";
+@import "vendor/daterangepicker";
+
+@import "base/variable";
+@import "base/font";
+
+// layout and main
+@import "layout/_main";
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_modal";
+
+// components
+// @import "components/instagramm";
+@import "components/card_drop";
+@import "components/form";
+@import "components/user_top";
+@import "components/modal__menu";
+@import "components/date__select";
+
+// pages
+@import "page/home/main";
+@import "page/collection/main";
+@import "page/trading/main";
+@import "page/activity/main";
+@import "page/personal_collection/main";
+@import "page/product/main";
+
+// @import "page/category/main";
+@import "page/404/main";

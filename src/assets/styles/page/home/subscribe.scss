@@ -1,0 +1,154 @@
+.block__subscribe__inner {
+  background: #202030;
+  border-radius: 40px;
+  color: #fff;
+  padding: 70px 100px 100px;
+  background-repeat: no-repeat;
+  background-size: 365px;
+  background-position: 94% 51%;
+  background-image: url("../../../images/pages/home/subscribe.png");
+}
+
+.block__subscribe__title {
+  font-family: "Termina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 115%;
+  margin-bottom: 20px;
+}
+
+.block__subscribe__text {
+  max-width: 350px;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 122.5%;
+  margin-bottom: 55px;
+}
+
+.block__subscribe__form form {
+  display: flex;
+}
+
+.block__subscribe__field {
+  background: #ffffff;
+  border-radius: 20px;
+  flex: 1;
+  padding: 10px 24px;
+}
+
+.btn_subscribe__form {
+  width: 175px;
+  margin-left: 20px;
+  background: #f75c03;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122.5%;
+  padding: 16px 10px;
+
+  &:hover {
+    background: darken(#f75c03, 20%);
+  }
+}
+
+.block__subscribe__form {
+  max-width: 665px;
+}
+
+.block__subscribe {
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+  .block__subscribe__inner {
+    padding: 65px 75px 80px;
+    background-size: 265px;
+  }
+
+  .block__subscribe__title {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .block__subscribe__text {
+    line-height: 1.45;
+    margin-bottom: 35px;
+  }
+
+  .block__subscribe__form {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .block__subscribe__title {
+    font-size: 30px;
+    line-height: 115%;
+  }
+
+  .block__subscribe__inner {
+    padding: 40px;
+    background-size: 165px;
+    background-position: 97.5% 50%;
+  }
+
+  .block__subscribe__text {
+    font-size: 12px;
+    line-height: 122.5%;
+    max-width: 260px;
+    margin-bottom: 25px;
+  }
+
+  .block__subscribe {
+    margin-bottom: 100px;
+  }
+
+  .block__subscribe__field {
+    font-size: 12px;
+    padding: 9px 20px;
+  }
+
+  .btn_subscribe__form {
+    font-size: 12px;
+    width: 114px;
+    padding: 9px;
+    margin-left: 15px;
+    border-radius: 12px;
+  }
+
+  .block__subscribe__form {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .block__subscribe__title {
+    margin-bottom: 17px;
+    line-height: 1.15;
+  }
+
+  .block__subscribe__form form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .block__subscribe__field {
+    width: 100%;
+    max-width: 260px;
+    margin-bottom: 10px;
+  }
+
+  .btn_subscribe__form {
+    margin: 0;
+  }
+
+  .block__subscribe__inner {
+    padding: 30px 30px 225px;
+    background-position: 50% calc(100% - 30px);
+    background-size: 230px;
+  }
+  .block__subscribe {
+    margin-bottom: 60px;
+  }
+}

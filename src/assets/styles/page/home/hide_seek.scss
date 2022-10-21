@@ -1,0 +1,246 @@
+.home__hide__seek {
+    padding: 150px 0;
+}
+
+.hide__seek__block {
+    background: #F0EFFF;
+    border-radius: 40px;
+    padding: 29px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hide__seek__image {
+    border-radius: 40px;
+    overflow: hidden;
+    width: 517px;
+    display: flex;
+}
+
+.hide__seek__image__inner {
+    font-size: 0;
+}
+
+.hide__seek__info {
+    flex: 1;
+    padding: 53px 68px;
+}
+
+.hide__seek__title {
+    font-family: 'Termina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 115%;
+    margin-bottom: 30px;
+}
+
+.hide__seek__title__section {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #736FA3;
+}
+
+.hide__seek__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 37px;
+}
+
+.hide__seek__col {
+    flex: 1;
+}
+
+.hide__seek__unit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(105, 105, 105, 0.1);
+    border-radius: 16px;
+    padding: 3px;
+    color: inherit;
+    text-decoration: none;
+    max-width: 226px;
+}
+
+.hide__seek__unit__image {
+    width: 46px;
+    margin-right: 10px;
+    display: flex;
+    overflow: hidden;
+    border-radius:15px;
+
+    &:hover {
+        background: rgb(255 255 255 / 23%);
+    }
+}
+
+
+.hide__seek__section {
+    margin-bottom: 23px;
+}
+
+.hide__seek__unit__title {
+    font-weight: bold;
+}
+
+.hide__seek__count {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 115%;
+    color: #000000;
+}
+
+.hide__seek__col--created {
+    max-width: 248px;
+}
+
+.btn__hide__seek {
+    background: #4737FF;
+    border-radius: 20px;
+    padding: 16px 50px;
+    display: inline-flex;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.5%;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover{
+        background: darken(#4737FF,20%);
+    }
+}
+
+.hide__seek__btn__wrap {
+    margin-left: -9px;
+}
+
+
+
+@media screen and (max-width:1400px) {
+    .hide__seek__count {
+        font-size: 34px;
+    }
+
+    .home__hide__seek {
+        padding: 100px 0;
+    }
+
+    .hide__seek__image {
+        width: 350px;
+    }
+
+    .hide__seek__count {
+        font-size: 34px;
+    }
+
+    .hide__seek__info {
+        padding: 30px 45px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .hide__seek__image {
+        width: 290px;
+    }
+
+    .hide__seek__title {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .hide__seek__block {
+        align-items: center;
+        padding: 15px;
+    }
+
+    .hide__seek__info {
+        padding: 25px 20px 25px 32px;
+    }
+
+    .hide__seek__title__section {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .hide__seek__unit__image {
+        width: 28px;
+    }
+
+    .hide__seek__unit__title {
+        font-size: 12px;
+    }
+
+    .hide__seek__unit {
+        border-radius: 10px;
+    }
+
+    .hide__seek__section {
+        margin-bottom: 16px;
+    }
+
+    .hide__seek__count {
+        font-size: 25px;
+    }
+
+    .hide__seek__row {
+        margin-bottom: 8px;
+    }
+
+    .btn__hide__seek {
+        font-size: 12px;
+        border-radius: 12px;
+        padding: 10px 30px;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .hide__seek__block {
+        flex-direction: column;
+        border-radius:20px
+    }
+
+    .hide__seek__image {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 25px;
+        border-radius:20px
+    }
+
+    .hide__seek__info {
+        padding: 0;
+        width: 100%;
+        flex: none;
+    }
+
+    .hide__seek__row {
+        gap: 15px;
+    }
+
+    .hide__seek__unit {
+        padding-right: 5px;
+    }
+
+    .hide__seek__title__section {
+        margin-bottom: 8px;
+    }
+
+    .hide__seek__section {
+        margin-bottom: 12px;
+    }
+
+    .home__hide__seek {
+        padding: 60px 0;
+    }
+
+    .hide__seek__btn__wrap {
+        margin-left: 0px;
+    }
+
+}

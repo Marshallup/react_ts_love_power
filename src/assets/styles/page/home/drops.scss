@@ -1,0 +1,118 @@
+.home__drops__title {
+  font-family: "Termina";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 115%;
+  margin-bottom: 50px;
+}
+
+.home__drops {
+  margin-bottom: 32px;
+}
+.home__drops__list {
+  margin-right: calc((-1) * ((100vw - 1324px + 50px) / 2));
+}
+
+.home__drops__list .card__drop {
+  margin: 10px 12px 30px;
+  width: 408px;
+}
+@media screen and (max-width: 1300px) {
+  .home__drops__list {
+    margin: 0 -25px 0 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home__drops__title {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+
+  b-r {
+    width: 240px;
+    margin: 10px 6px 25px;
+    border-radius: 20px;
+  }
+
+  .card__drop__add_info__title {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+
+  .card__drop__add_info__value {
+    font-size: 18px;
+  }
+
+  .card__drop__info {
+    padding: 10px 20px 12px;
+  }
+
+  .card__drop__who__image {
+    width: 20px;
+    margin-right: 8px;
+  }
+
+  .card__drop__who__name {
+    font-size: 12px;
+    margin-bottom: -4px;
+  }
+
+  .btn__card__drop {
+    font-size: 12px;
+    padding: 10px;
+    width: 75px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 12px;
+  }
+
+  .card__drop__add_info {
+    padding-right: 80px;
+  }
+
+  .home__drops__list .card__drop {
+    width: 235px;
+    margin: 10px 6px 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home__drops__list .card__drop {
+    width: 200px;
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card__drop__who__name {
+    font-size: 10px;
+  }
+
+  .card__drop__info {
+    padding: 10px 13px 12px;
+  }
+
+  .btn__card__drop {
+    width: 64px;
+    padding: 7px;
+    font-size: 10px;
+  }
+
+  .card__drop__add_info__value {
+    font-size: 15px;
+  }
+
+  .card__drop__add_info__title {
+    font-size: 10px;
+    margin-bottom: 1px;
+  }
+
+  .card__drop__add_info {
+    padding-right: 65px;
+  }
+
+  .card__drop__who {
+    margin-bottom: 5px;
+  }
+}

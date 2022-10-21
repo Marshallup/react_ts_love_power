@@ -1,0 +1,140 @@
+.home__promo {
+    background: #4737ff;
+    color: #fff;
+    padding: 117px 0 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home__promo__title {
+    font-family: 'Termina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 115%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.home__promo__text {
+    max-width: 320px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.35;
+    margin-bottom: 77px;
+}
+
+.home__promo__btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn__home__promo_1 {
+    background: #f75c03;
+    border-radius: 20px;
+    padding: 15px 51px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn__home__promo_2 {
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 15px 49px;
+}
+
+.home__promo__image {
+    display: flex;
+    position: absolute;
+    left: calc(50% - -3px);
+    top: 38px;
+    width: 860px;
+}
+
+
+.btn__home__promo_1:hover {
+    background: #e36217;
+}
+
+.btn__home__promo_2:hover {
+    opacity: 0.75;
+}
+
+.home__promo__info {
+    position: relative;
+    z-index: 1;
+}
+
+
+@media screen and (max-width:900px) {
+
+    .home__promo__title {
+        font-size: 30px;
+    }
+
+    .home__promo__text {
+        font-size: 12px;
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .home__promo__btns {
+        max-width: 240px;
+        gap: 15px;
+    }
+
+    .home__promo__btns a {
+        border-radius: 12px;
+        font-weight: bold;
+        padding: 10px;
+        flex: 1;
+        justify-content: center;
+        display: inline-flex;
+        font-size: 12px;
+    }
+
+    .home__promo__image {
+        width: 500px;
+    }
+
+    .home__promo {
+        padding: 70px 0 100px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .home__promo__image {
+        position: absolute;
+        width: calc(100% + 50px);
+        top: auto;
+        left: 25px;
+        height: 250px;
+        bottom: -45px;
+    }
+
+    .home__promo__text {
+        margin-bottom: 25px;
+    }
+
+    .home__promo__btns {
+        gap: 10px;
+    }
+
+    .home__promo {
+        padding: 35px 0 235px;
+    }
+
+    .home__promo__image img {
+        object-fit: contain;
+        object-position: 0 0;
+        width: 100%;
+        height: 100%;
+    }
+}

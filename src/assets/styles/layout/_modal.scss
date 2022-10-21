@@ -1,0 +1,243 @@
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(10px);
+  z-index: 1000000;
+}
+
+.ReactModal__Content {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.default__modal {
+  background: #ffffff;
+  border-radius: 40px;
+  max-width: 410px;
+  width: calc(100% - 20px);
+  padding: 0;
+  color: #000;
+  margin: 0 auto;
+}
+
+.modal__connect {
+  padding: 40px 55px;
+}
+
+.modal__connect__link {
+  background: #f0efff;
+  border-radius: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122.5%;
+  padding: 21px 30px;
+}
+
+.modal__connect__link img {
+  margin-right: 15px;
+}
+
+.modal__connect__link:hover {
+  background: #d1cff6;
+}
+
+.modal__connect__link:last-child {
+  margin-bottom: 0;
+}
+
+.modal__connect__list {
+  margin-bottom: 50px;
+}
+
+.btn_modal__connect {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122.5%;
+  text-align: center;
+  color: inherit;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 13px;
+  max-width: 250px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_modal__connect:hover {
+  color: #fff;
+  background: #000;
+}
+
+.modal__connect__text {
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 1.35;
+  margin-bottom: 25px;
+}
+
+.modal__connect__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 122.5%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal__offer {
+  max-width: 620px;
+}
+
+.modal__offer__inner {
+  padding: 40px 50px 60px;
+}
+
+.modal__offer__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 122.5%;
+  text-align: center;
+}
+
+.field__item__title__inner__text {
+  font-size: 24px;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.field__item__title__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.field__item__title__inner .checkbox__field {
+  width: 50px;
+  margin-top: 5px;
+}
+
+.modal__offer__form .field__item {
+  margin-bottom: 18px;
+}
+
+.field__item__modal__text {
+  font-size: 18px;
+  line-height: 1.35;
+  margin-bottom: 30px;
+}
+
+.field__item__modal__text a {
+  color: #4737ff;
+}
+
+.field__item__modal__text a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn__orange_x {
+  background: #f75c03;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122.5%;
+  text-align: center;
+  color: #fff;
+  border: 1px solid;
+  display: inline-flex;
+  border-radius: 20px;
+  padding: 15px 49px;
+}
+
+.modal__offer__btns {
+  gap: 24px;
+  display: flex;
+}
+
+.btn__orange_x:hover {
+  background: #000;
+}
+
+@media screen and (max-width: 550px) {
+  .modal__connect {
+    padding: 30px 20px;
+    border-radius: 20px;
+    max-width: 350px;
+  }
+
+  .modal__connect__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .modal__connect__text {
+    font-size: 15px;
+    text-align: center;
+    max-width: 260px;
+    margin: 0 auto 20px;
+  }
+
+  .modal__connect__link {
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 18px 20px;
+  }
+
+  .modal__connect__link img {
+    width: 26px;
+  }
+
+  .modal__connect__list {
+    margin-bottom: 25px;
+  }
+
+  .btn_modal__connect {
+    font-size: 16px;
+  }
+  .modal__offer__inner {
+    padding: 30px 20px;
+  }
+
+  .modal__offer {
+    max-width: 350px;
+    border-radius: 20px;
+  }
+
+  .modal__offer__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .modal__offer__form form > .field__item {
+    margin-bottom: 22px;
+  }
+
+  .field__item__title__inner__text {
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .modal__offer__form .field__item__row > * {
+    margin: 0;
+  }
+
+  .field__item__modal__text {
+    font-size: 14px;
+  }
+
+  .modal__offer__btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal__offer__btns a {
+    justify-content: center;
+    padding: 13px;
+    font-size: 15px;
+  }
+}
