@@ -9,10 +9,19 @@
     top: -40px;
     right: 0;
     cursor: pointer;
+
+    svg {
+      outline: none;
+    }
   }
   &__content {
     display: flex;
     justify-content: center;
+  }
+
+  &-show {
+    position: fixed;
+    width: 100%;
   }
 }
 
@@ -20,6 +29,17 @@
   background: rgba(0, 0, 0, 0.7) !important;
   backdrop-filter: blur(10px);
   z-index: 1000000;
+
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
 }
 
 .ReactModal__Content {

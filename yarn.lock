@@ -7815,6 +7815,11 @@ schema-utils@^4.0.0:
     ajv-formats "^2.1.1"
     ajv-keywords "^5.0.0"
 
+scrollbar-size@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/scrollbar-size/-/scrollbar-size-2.1.0.tgz#12ca1fd94a143c6b8ea86dd68754d9ac58919d7c"
+  integrity sha512-rKZxPr6p/TXtH17sgsxNc3Q+9DPkziA3JYT+O31TbChphhT/7+0O1SE20BzQT1OcF3zFlMPGHTlb9AZkhn08MA==
+
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
