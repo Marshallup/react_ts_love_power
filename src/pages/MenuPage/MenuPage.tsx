@@ -8,8 +8,9 @@ const MenuPage = () => {
       <li><Link className='good good--2' to="/trending">Trending collections</Link></li>
       <li><Link className='good good--2' to="/create-item">Create New Item</Link></li>
       <li><Link className='good good--2' to="/create-collection">Create New Collection</Link></li>
+      <li><Link className='good good--2' to="/collection-nft">Collection NFTs</Link></li>
 
-      {/* <li><a className='good good--2' href="collection_nft.html">Collection NFTs</a></li>
+      {/*
       <li><a className='good good--2' href="collection_activity.html">Collection Activity</a></li>
 
       <li><a className='good good--2' href="personal_collection.html">Personal (Show Collections)</a></li>

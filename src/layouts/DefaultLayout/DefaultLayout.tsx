@@ -6,7 +6,7 @@ import MobileMenu from "../../components/menus/MobileMenu/MobileMenu";
 import { lockBody } from '../../utils/helpers';
 import { DefaultLayoutProps } from "./types";
 
-const DefaultLayout: FC<PropsWithChildren<DefaultLayoutProps>> = ({ hasPaddingTop, exploreMenu = false, children }) => {
+const DefaultLayout: FC<PropsWithChildren<DefaultLayoutProps>> = ({ hasPaddingTop, userTop = false, exploreMenu = false, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
@@ -33,7 +33,7 @@ const DefaultLayout: FC<PropsWithChildren<DefaultLayoutProps>> = ({ hasPaddingTo
 
       <Header exploreMenu={exploreMenu} onExplore={onExplore} onActiveBurger={onActiveBurger} onDisableBurger={onDisableBurger} />
 
-      <div className={`${hasPaddingTop ? 'main__content' : ''}`}>
+      <div className={`${hasPaddingTop ? 'main__content' : ''} ${userTop ? 'main__container main__container--user_top' : ''}`}>
         {children}
       </div>
 
